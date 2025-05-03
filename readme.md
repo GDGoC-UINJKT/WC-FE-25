@@ -6,15 +6,18 @@ Here you will find **materials**, **notes**, and **important information** from 
 ---
 
 ## Our Speaker 🗣️
-- [Mas Farros](https://github.com/lordsans-404)
 - [Mas Maul](https://github.com/WeissCurry)
 
 ---
 
-## Main Topics 📌
-![Main Topics](https://skillicons.dev/icons?i=html,css,js,github,netlify,vercel,nodejs,tailwindcss,bootstrap)
+## Sessions Topics : Dasar-dasar JavaScript 
+- JavaScript
+- Variable di JavaScript
+- Tipe data di JavaScript
+- Operators di JavaScript
+- Array & Object Methods
 
-
+![My Skills](https://skillicons.dev/icons?i=js,nodejs)
 ---
 
 ## Notes 📝
