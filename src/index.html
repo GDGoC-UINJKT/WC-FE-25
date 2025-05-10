@@ -1,15 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="script.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DOM Manipulation - Create and Delete Cards and List Items</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-gray-50 min-h-screen flex flex-col items-center p-6 font-sans">
+
+    <h1 class="text-3xl font-bold text-gray-800 mb-4">Buat Kartu Baru</h1>
+    <div class="flex gap-3 mb-6">
+        <input id="cardInput" type="text" placeholder="Masukkan nama kartu..." 
+            class="px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        <button id="createCardButton" 
+            class="px-5 py-2 bg-blue-600 text-white rounded-md shadow hover:bg-blue-700 transition">
+            Buat Kartu
+        </button>
+    </div>
+
+    <div id="cardContainer" class="flex flex-wrap gap-4 justify-center w-full max-w-4xl"></div>
+
+    <h1 class="text-3xl font-bold text-gray-800 mt-12 mb-4">Buat Item Daftar Baru</h1>
+    <div class="flex gap-3 mb-4">
+        <input id="listInput" type="text" placeholder="Masukkan nama item daftar..." 
+            class="px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500" />
+        <button id="createListButton" 
+            class="px-5 py-2 bg-green-600 text-white rounded-md shadow hover:bg-green-700 transition">
+            Buat Item
+        </button>
+    </div>
+
+    <ul id="listContainer" class="list-disc list-inside space-y-2 w-full max-w-md text-gray-700"></ul>
+
     <script>
-        console.log("halo");
+        const createCardButton = document.getElementById('createCardButton')
+        const cardContainer = document.getElementById('cardContainer')
+        const cardInput = document.getElementById('cardInput')
+
+        createCardButton.addEventListener('click', function() {
+            const cardName = cardInput.value.trim() || 'Kartu Baru'
+            const card = document.createElement('div')
+            card.className = 'bg-white rounded-lg shadow-md p-6 w-40 text-center flex flex-col justify-center relative'
+
+            card.innerHTML = `
+                <h3 class="text-lg font-semibold mb-2">${cardName}</h3>
+                <p class="text-gray-600 text-sm mb-4">Ini adalah kartu yang dibuat saat tombol ditekan.</p>
+                <button class="delete-card absolute top-2 right-2 text-red-600 hover:text-red-800 font-bold text-xl leading-none">&times</button>
+            `
+
+            // Tambahkan event listener untuk tombol hapus kartu
+            card.querySelector('.delete-card').addEventListener('click', function() {
+                card.remove()
+            })
+
+            cardContainer.appendChild(card)
+            cardInput.value = ''
+        })
+
+        const createListButton = document.getElementById('createListButton')
+        const listContainer = document.getElementById('listContainer')
+        const listInput = document.getElementById('listInput')
+
+        createListButton.addEventListener('click', function() {
+            const listItemName = listInput.value.trim() || 'Item Daftar Baru'
+            const listItem = document.createElement('li')
+            listItem.className = 'bg-white rounded px-3 py-1 shadow-sm flex justify-between items-center'
+
+            listItem.innerHTML = `
+                <span>${listItemName}</span>
+                <button class="delete-list-item text-red-600 hover:text-red-800 font-bold text-lg leading-none">&times</button>
+            `
+
+            // Tambahkan event listener untuk tombol hapus item daftar
+            listItem.querySelector('.delete-list-item').addEventListener('click', function() {
+                listItem.remove()
+            })
+
+            listContainer.appendChild(listItem)
+            listInput.value = ''
+        })
     </script>
+
 </body>
 </html>
