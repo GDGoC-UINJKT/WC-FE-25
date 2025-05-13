@@ -6,19 +6,24 @@ Here you will find **materials**, **notes**, and **important information** from 
 ---
 
 ## Our Speaker 🗣️
-- [Mas Farros](https://github.com/lordsans-404)
-- [Mas Maul](https://github.com/WeissCurry)
+- [Mas Riyan](https://github.com/riyqnn)
 
 ---
 
-## Main Topics 📌
-![Main Topics](https://skillicons.dev/icons?i=html,css,js,github,netlify,vercel,nodejs,tailwindcss,bootstrap)
+## Session Topics : Sekilas TailwindCSS
+- Apa itu TailwindCSS
+- Penulisan Syntax Tailwind
+
+![Main Topics](https://skillicons.dev/icons?i=html,css)
 
 
 ---
 
 ## Notes 📝
 Important notes, tips, or useful reference links from this session.
+
+- Source : (https://github.com/riyqnn/webdef-fe)
+- Free Tailwind UI Elements : (https://uiverse.io/)
 
 ---
 

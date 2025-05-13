@@ -1,0 +1,17 @@
+.box {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 1rem;
+}
+
+.box1 {
+    background: blue;
+}
+
+.box2 {
+    background: red;
+}
+
+.box3 {
+    background: green;
+}
