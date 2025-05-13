@@ -7,12 +7,16 @@ Here you will find **materials**, **notes**, and **important information** from 
 
 ## Our Speaker 🗣️
 - [Mas Farros](https://github.com/lordsans-404)
-- [Mas Maul](https://github.com/WeissCurry)
 
 ---
 
-## Main Topics 📌
-![Main Topics](https://skillicons.dev/icons?i=html,css,js,github,netlify,vercel,nodejs,tailwindcss,bootstrap)
+## Session Topics : Pengenalan HTML
+- Apa itu HTML
+- Struktur kode HTML
+- Mengenal element-element HTML
+- Cara kerja atribut elemen
+
+![Main Topics](https://skillicons.dev/icons?i=html)
 
 
 ---
