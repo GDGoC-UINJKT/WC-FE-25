@@ -7,12 +7,17 @@ Here you will find **materials**, **notes**, and **important information** from 
 
 ## Our Speaker 🗣️
 - [Mas Farros](https://github.com/lordsans-404)
-- [Mas Maul](https://github.com/WeissCurry)
 
 ---
 
-## Main Topics 📌
-![Main Topics](https://skillicons.dev/icons?i=html,css,js,github,netlify,vercel,nodejs,tailwindcss,bootstrap)
+## Session Topics : Css Responsive Design
+- Meta Tag Viewport.
+- Prinsip Utama RWD(Responsive Web Design).
+- Flexbox & Grid.
+- Media Queries.
+
+
+![Main Topics](https://skillicons.dev/icons?i=html,css)
 
 
 ---
