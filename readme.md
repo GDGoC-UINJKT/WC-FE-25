@@ -7,12 +7,17 @@ Here you will find **materials**, **notes**, and **important information** from 
 
 ## Our Speaker 🗣️
 - [Mas Farros](https://github.com/lordsans-404)
-- [Mas Maul](https://github.com/WeissCurry)
 
 ---
 
-## Main Topics 📌
-![Main Topics](https://skillicons.dev/icons?i=html,css,js,github,netlify,vercel,nodejs,tailwindcss,bootstrap)
+## Session Topics : Pengenalan CSS
+- Apa itu CSS
+- Penulisan Syntax CSS
+- CSS Selectors
+- CSS Base Properties
+- Pengenalan media queries
+
+![Main Topics](https://skillicons.dev/icons?i=html,css)
 
 
 ---
